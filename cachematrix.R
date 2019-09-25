@@ -4,7 +4,6 @@
 ## Function will create a list of functions that calculate matrix inversion
 
 makeCacheMatrix <- function(x = matrix()) {
-    browser()
     m <- NULL
     set <- function(y){
         x <<- y
@@ -23,7 +22,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Calculation will check if cached inverse value exists
 
 cacheSolve <- function(x, ...) {
-    browser()
     m <- x$getinverse() # check getinverse here
     if(!is.null(m)) {   # if it's not NULL then use cache
         message("getting cached inverse matrix")
